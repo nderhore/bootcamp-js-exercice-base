@@ -5,7 +5,13 @@
 
 
 function isEven(number) {
-    // code ici
+    // si un nombre est divisible par 2, alors il est pair
+    // divisible par deux, signifie avoir un reste etant égal à 0
+    if ( number % 2 === 0){
+        return true;
+    } else {
+        return false;
+    }
 }
 
 // Exemple d'utilisation

@@ -5,7 +5,18 @@
 
 
 function isPalindrome(str) {
-    // code ici
+
+    /** je prend la chaine de caractère
+     * je la converti en tableau, chaque indice du tableau comporte une lettre
+     * de ma chaine.
+     * Ensuite, j'inverse la chaine grace à reverse (une méthode que possede les tableaux)
+     * exemple : ['j','a','v','a'] deviens ['a','v','a','j']
+     * Enfin, je converti mon tableau en une chaine caractère, donc ['a','v','a','j'] deviens avaj
+    **/
+    return str.toLowerCase()
+        .split("")
+        .reverse()
+        .join("") === str
 }
 
 // Exemple d'utilisation

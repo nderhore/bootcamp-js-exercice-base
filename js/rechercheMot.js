@@ -5,7 +5,18 @@
 
 
 function containsWord(sentence, word) {
-    //code ici
+
+    // programmation
+    //La pro est amusante => faux
+    // La programmation est amusante => vrai
+
+    // includes =>
+    // je vais prendre une lettre de sentence , je vais la comparer à la premiere lettre de word
+    // si c'est ok , je continu , x fois
+    // si j'arrive à la fin du mot word alors, je sais que le word est inclus dans ma chaine
+
+
+    return sentence.toLowerCase().includes(word.toLowerCase());
 }
 
 // Exemple d'utilisation
